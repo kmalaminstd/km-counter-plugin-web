@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM Counter Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <h1>KM Counter Plugin (Js)</h1>
+        <p>Explore our amazing counter plugin below</p>
+        <a href="#about">Get Started</a>
+    </section>
+
+    <section id="km-counter" class="km-counter-section">
+        <!-- <h2 style="text-align:center; color:white;">Our Achievements</h2> -->
+        <div class="km-counter">
+            <div class="km-counter-box">
+                <h2 class="count-item" data-target="4520">0</h2>
+                <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="km-counter-box">
+                <h2 class="count-item" data-target="3420">0</h2>
+                <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="km-counter-box">
+                <h2 class="count-item" data-target="2890">0</h2>
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Documentation</h2>
+
+        <h3>Overview</h3>
+        <p class="over_text">
+            The KM Counter-Up Plugin is a custom JavaScript feature that animates numerical counters when they come into the viewport. The counter starts from 0 and gradually increases to the specified target number when the section containing the counters is visible. This animation is achieved using the <span class="c_high">IntersectionObserver API</span>.</p>
+
+        <h3>Features</h3>
+        <p>
+            <ol>
+                <li>
+                    <span class="f_col">Smooth Counter Animation:</span> 
+                    <ul>
+                        <li>The numbers gradually count up from 0 to the target value.</li>
+                    </ul>
+                </li>
+            
+                <li><div class="f_col">Intersection Observer Support:</div></li>
+                <ul>
+                    <li>The animation is triggered when the counters come into view, optimizing performance by only animating when visible to the user.</li>
+                </ul>
+            
+                <li><div class="f_col">Customizable Animation Duration:</div></li>
+                <ul>
+                    <li>You can easily adjust the duration of the counter animation.</li>
+                </ul>
+            
+                <li class="f_col">Lightweight and fast.</li>
+                <li class="f_col">Automatically animates counters when they come into view.</li>
+                
+            </ol>
+            
+
+
+             
+        </p>
+
+        <h3>HTML Structure</h3>
+
+        <p class="st_text">
+            Each counter is wrapped inside a . <span class="c_high">km-counter-box</span> container. The number to be animated is contained within an <span class="c_high">h2</span> element with the class <span class="c_high">count-item</span>. The target number is set via the <span class="c_high">data-target</span> attribute</p>
+        <div class="code_img">
+            <img src="./image/carbon.png" alt="">
+        </div>
+
+        <h3>JavaScript Integration</h3>
+
+        <p>Make sure to include the minified version of the plugin JavaScript file in your HTML document. Add the script before the closing </body> tag.</p>
+
+        <p class="js_p_link c_high">https://cdn.jsdelivr.net/gh/kmalaminstd/counterUp_vanilaJs@main/dist/km.counter.min.js</p>
+        <div class="code_img">
+            
+            <img src="./image/carbon (1).png" alt="">
+        </div>
+
+        <h3>Initialize the Plugin</h3>
+        <p>Instantiate the counter to activate it</p>
+        <div class="code_img">
+            <p class="c_high">const counter = new Counter()</p>
+            <img src="./image/carbon (2).png" alt="">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Follow developer</p>
+        <a href="https://www.facebook.com/kmalaminstd" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/kmalaminwd/" target="_blank">Instagram</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/kmalaminstd/counterUp_vanilaJs@main/dist/km.counter.min.js"></script>
+    <script>
+        const counter = new Counter()
+    </script>
+</body>
+</html>
